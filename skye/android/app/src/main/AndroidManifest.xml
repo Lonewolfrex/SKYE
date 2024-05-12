@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.skye.skye">
+    package="com.example.skye">
    <application
         android:label="skye"
         android:name="${applicationName}"

@@ -1,10 +1,9 @@
-// main.dart
-
 import 'package:flutter/material.dart';
-import 'screens/landing_screen.dart';
-import 'screens/add_expense_screen.dart';
-import 'screens/update_category_screen.dart';
-import 'screens/expense_report_screen.dart';
+import 'package:skye/screens/screen0_landing.dart';
+import 'package:skye/screens/screen1_add_expense.dart';
+import 'package:skye/screens/screen2_expense_categories.dart';
+import 'package:skye/screens/screen3_view_expenditure_report.dart';
+import 'package:skye/utils/app_colors.dart';
 
 void main() {
   runApp(ExpenseTrackerApp());
@@ -16,15 +15,16 @@ class ExpenseTrackerApp extends StatelessWidget {
     return MaterialApp(
       title: 'Expense Tracker',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: AppColors.primaryColor,
+        hintColor: AppColors.accentColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => LandingScreen(), // Landing screen route
-        '/add_expense': (context) => AddExpenseScreen(), // Add expense screen route
-        '/update_category': (context) => UpdateCategoryScreen(), // Update category screen route
-        '/expense_report': (context) => ExpenseReportScreen(), // Expense report screen route
+        '/': (context) => LandingScreen(),
+        '/addExpense': (context) => AddExpenseScreen(),
+        '/ExpenseCategory': (context) => ExpenseCategoryScreen(),
+        '/viewMyExpense': (context) => ViewMyExpenseScreen(),
       },
     );
   }

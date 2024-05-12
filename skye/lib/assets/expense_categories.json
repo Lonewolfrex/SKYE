@@ -1,0 +1,142 @@
+{
+  "categories": [
+    {
+      "name": "Groceries",
+      "subcategories": [
+        "Fruits",
+        "Vegetables",
+        "Dairy",
+        "Meat/Poultry",
+        "Bread/Bakery",
+        "Canned Goods",
+        "Snacks",
+        "Beverages",
+        "Spices/Condiments",
+        "Frozen Foods",
+        "Other"
+      ]
+    },
+    {
+      "name": "Transportation",
+      "subcategories": [
+        "Fuel/Gasoline",
+        "Public Transit",
+        "Car Maintenance",
+        "Parking",
+        "Tolls",
+        "Ride-Sharing",
+        "Bicycle Maintenance",
+        "Other"
+      ]
+    },
+    {
+      "name": "Bills/Utilities",
+      "subcategories": [
+        "Electricity",
+        "Water",
+        "Gas",
+        "Internet",
+        "Phone",
+        "Cable/Satellite TV",
+        "Waste/Trash",
+        "Home Security",
+        "Other"
+      ]
+    },
+    {
+      "name": "Dining Out",
+      "subcategories": [
+        "Restaurants",
+        "Fast Food",
+        "Coffee Shops",
+        "Takeout/Delivery",
+        "Bars/Pubs",
+        "Cafeterias",
+        "Food Trucks",
+        "Other"
+      ]
+    },
+    {
+      "name": "Entertainment",
+      "subcategories": [
+        "Movies/Theater",
+        "Concerts/Events",
+        "Streaming Services",
+        "Books/Magazines",
+        "Video Games",
+        "Hobbies/Activities",
+        "Sporting Events",
+        "Amusement Parks",
+        "Other"
+      ]
+    },
+    {
+      "name": "Personal Care",
+      "subcategories": [
+        "Haircuts/Barber",
+        "Beauty Products",
+        "Skincare",
+        "Spa/Massage",
+        "Gym Memberships",
+        "Clothing/Shoes",
+        "Accessories",
+        "Other"
+      ]
+    },
+    {
+      "name": "Health/Medical",
+      "subcategories": [
+        "Health Insurance",
+        "Doctor Visits",
+        "Medications",
+        "Dental Care",
+        "Vision Care",
+        "Medical Devices",
+        "Therapy/Counseling",
+        "Health Supplements",
+        "Other"
+      ]
+    },
+    {
+      "name": "Home",
+      "subcategories": [
+        "Rent/Mortgage",
+        "Home Insurance",
+        "Property Taxes",
+        "Home Repairs/Maintenance",
+        "Furniture",
+        "Appliances",
+        "Home Decor",
+        "Garden/Lawn Care",
+        "Other"
+      ]
+    },
+    {
+      "name": "Travel",
+      "subcategories": [
+        "Airfare",
+        "Accommodations",
+        "Rental Cars",
+        "Tours/Activities",
+        "Travel Insurance",
+        "Souvenirs/Gifts",
+        "Visa/Passport Fees",
+        "Other"
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "subcategories": [
+        "Gifts/Donations",
+        "Pet Care",
+        "Childcare",
+        "Education/Classes",
+        "Subscriptions/Memberships",
+        "Taxes",
+        "Legal Fees",
+        "Moving Expenses",
+        "Other"
+      ]
+    }
+  ]
+}

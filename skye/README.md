@@ -1,6 +1,6 @@
 # skye
 
-Expense tracker
+A new Flutter project.
 
 ## Getting Started
 
