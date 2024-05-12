@@ -142,30 +142,34 @@ class _ExpenseCategoryScreenState extends State<ExpenseCategoryScreen> {
         builder: (BuildContext context) {
           return AlertDialog(
             title: Text('Subcategories for $categoryName'),
-            content: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: subcategories.map((subcategory) {
-                  return Row(
-                    children: [
-                      Expanded(
-                        child: Text(subcategory),
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.edit),
-                        onPressed: () {
-                          _editSubcategory(categoryName, subcategory);
-                        },
-                      ),
-                      IconButton(
-                        icon: Icon(Icons.delete),
-                        onPressed: () {
-                          _deleteSubcategory(categoryName, subcategory);
-                        },
-                      ),
-                    ],
+            content: Container(
+              width: double.maxFinite,
+              child: ListView.builder(
+                shrinkWrap: true,
+                itemCount: subcategories.length,
+                itemBuilder: (context, index) {
+                  String subcategory = subcategories[index];
+                  return ListTile(
+                    title: Text(subcategory),
+                    trailing: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        IconButton(
+                          icon: Icon(Icons.edit),
+                          onPressed: () {
+                            _editSubcategory(categoryName, subcategory);
+                          },
+                        ),
+                        IconButton(
+                          icon: Icon(Icons.delete),
+                          onPressed: () {
+                            _deleteSubcategory(categoryName, subcategory);
+                          },
+                        ),
+                      ],
+                    ),
                   );
-                }).toList(),
+                },
               ),
             ),
             actions: <Widget>[
@@ -183,6 +187,8 @@ class _ExpenseCategoryScreenState extends State<ExpenseCategoryScreen> {
       print('Error fetching subcategories: $e');
     }
   }
+
+
 
   void _editSubcategory(String categoryName, String subcategoryName) async {
     String? editedSubcategoryName = await showDialog(
@@ -305,6 +311,7 @@ class _ExpenseCategoryScreenState extends State<ExpenseCategoryScreen> {
       }
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
